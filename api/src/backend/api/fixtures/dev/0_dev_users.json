@@ -1,0 +1,28 @@
+[
+  {
+    "model": "api.user",
+    "pk": "8b38e2eb-6689-4f1e-a4ba-95b275130200",
+    "fields": {
+      "password": "pbkdf2_sha256$870000$Z63pGJ7nre48hfcGbk5S0O$rQpKczAmijs96xa+gPVJifpT3Fetb8DOusl5Eq6gxac=",
+      "last_login": null,
+      "name": "Devie Prowlerson",
+      "email": "dev@prowler.com",
+      "company_name": "Prowler Developers",
+      "is_active": true,
+      "date_joined": "2024-09-17T09:04:20.850Z"
+    }
+  },
+  {
+    "model": "api.user",
+    "pk": "b6493a3a-c997-489b-8b99-278bf74de9f6",
+    "fields": {
+      "password": "pbkdf2_sha256$870000$Z63pGJ7nre48hfcGbk5S0O$rQpKczAmijs96xa+gPVJifpT3Fetb8DOusl5Eq6gxac=",
+      "last_login": null,
+      "name": "Devietoo Prowlerson",
+      "email": "dev2@prowler.com",
+      "company_name": "Prowler Developers",
+      "is_active": true,
+      "date_joined": "2024-09-18T09:04:20.850Z"
+    }
+  }
+]

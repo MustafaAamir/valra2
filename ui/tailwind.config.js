@@ -23,7 +23,7 @@ module.exports = {
           theme: {
             midnight: "#030921",
             pale: "#f3fcff",
-            green: "#8ce112",
+            green: "#b16dd1",
             purple: "#5001d0",
             coral: "#ff5356",
             orange: "#f69000",
@@ -39,7 +39,7 @@ module.exports = {
             600: "#64748b",
           },
           green: {
-            DEFAULT: "#9FD655",
+            DEFAULT: "#B16DD1",
             medium: "#09BF3D",
           },
           black: {
@@ -84,7 +84,7 @@ module.exports = {
           },
         },
         danger: "#E11D48",
-        action: "#9FD655",
+        action: "#B16DD1",
       },
       fontFamily: {
         sans: ["var(--font-sans)"],
@@ -194,17 +194,17 @@ module.exports = {
         dark: {
           colors: {
             primary: {
-              DEFAULT: "#9FD655",
+              DEFAULT: "#B16DD1",
               foreground: "#000000",
             },
-            focus: "#9FD655",
+            focus: "#B16DD1",
             background: "#030921",
           },
         },
         light: {
           colors: {
             primary: {
-              DEFAULT: "#9FD655",
+              DEFAULT: "#B16DD1",
               foreground: "#000000",
             },
           },

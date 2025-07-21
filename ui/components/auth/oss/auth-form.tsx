@@ -11,7 +11,7 @@ import { z } from "zod";
 import { authenticate, createNewUser } from "@/actions/auth";
 import { initiateSamlAuth } from "@/actions/integrations/saml";
 import { PasswordRequirementsMessage } from "@/components/auth/oss/password-validator";
-import { NotificationIcon, ProwlerExtended } from "@/components/icons";
+import { NotificationIcon, TrustreadyShort, TrustreadyExtended } from "@/components/icons";
 import { ThemeSwitch } from "@/components/ThemeSwitch";
 import { useToast } from "@/components/ui";
 import { CustomButton, CustomInput } from "@/components/ui/custom";
@@ -189,7 +189,7 @@ export const AuthForm = ({
         <div className="relative z-10 flex w-full max-w-sm flex-col gap-4 rounded-large border-1 border-divider bg-white/90 px-8 py-10 shadow-small dark:bg-background/85 md:max-w-md">
           {/* Prowler Logo */}
           <div className="absolute -top-[100px] left-1/2 z-10 flex h-fit w-fit -translate-x-1/2">
-            <ProwlerExtended width={300} />
+            <TrustreadyExtended width={300} />
           </div>
           <div className="flex items-center justify-between">
             <p className="pb-2 text-xl font-medium">

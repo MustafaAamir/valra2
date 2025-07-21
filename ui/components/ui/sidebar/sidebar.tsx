@@ -3,8 +3,7 @@
 import clsx from "clsx";
 import Link from "next/link";
 
-import { ProwlerShort } from "@/components/icons";
-import { ProwlerExtended } from "@/components/icons";
+import { TrustreadyExtended, TrustreadyShort } from "@/components/icons";
 import { useSidebar } from "@/hooks/use-sidebar";
 import { useStore } from "@/hooks/use-store";
 import { cn } from "@/lib/utils";
@@ -53,7 +52,7 @@ export function Sidebar() {
                 hidden: isOpen,
               })}
             >
-              <ProwlerShort />
+              <TrustreadyShort />
             </div>
             <div
               className={clsx({
@@ -61,7 +60,7 @@ export function Sidebar() {
                 "!mt-0": isOpen,
               })}
             >
-              <ProwlerExtended />
+              <TrustreadyExtended />
             </div>
           </Link>
         </Button>

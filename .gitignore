@@ -77,3 +77,4 @@ node_modules
 _data/
 .env
 .env
+.env.backup

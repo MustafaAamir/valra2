@@ -78,3 +78,4 @@ _data/
 .env
 .env
 .env.backup
+client_secrets.json

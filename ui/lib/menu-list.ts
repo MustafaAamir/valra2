@@ -21,10 +21,8 @@ import {
 } from "lucide-react";
 
 import {
-  APIdocIcon,
   AWSIcon,
   AzureIcon,
-  CircleHelpIcon,
   DocIcon,
   GCPIcon,
   KubernetesIcon,
@@ -116,40 +114,40 @@ export const getMenuList = (pathname: string): GroupProps[] => {
           defaultOpen: false,
         },
         {
-                  href: "",
-                  label: "Auditor View",
-                  icon: SquarePen,
-                  submenus: [
-                    {
-                      href: "/findings?filter[status__in]=FAIL&filter[severity__in]=critical%2Chigh%2Cmedium&filter[provider_type__in]=aws&sort=severity,-inserted_at",
-                      label: "Amazon Web Services",
-                      icon: AWSIcon,
-                    },
-                    {
-                      href: "/findings?filter[status__in]=FAIL&filter[severity__in]=critical%2Chigh%2Cmedium&filter[provider_type__in]=azure&sort=severity,-inserted_at",
-                      label: "Microsoft Azure",
-                      icon: AzureIcon,
-                    },
-                    {
-                      href: "/findings?filter[status__in]=FAIL&filter[severity__in]=critical%2Chigh%2Cmedium&filter[provider_type__in]=m365&sort=severity,-inserted_at",
-                      label: "Microsoft 365",
-                      icon: M365Icon,
-                    },
-                    {
-                      href: "/findings?filter[status__in]=FAIL&filter[severity__in]=critical%2Chigh%2Cmedium&filter[provider_type__in]=gcp&sort=severity,-inserted_at",
-                      label: "Google Cloud",
-                      icon: GCPIcon,
-                    },
-                    {
-                      href: "/findings?filter[status__in]=FAIL&filter[severity__in]=critical%2Chigh%2Cmedium&filter[provider_type__in]=kubernetes&sort=severity,-inserted_at",
-                      label: "Kubernetes",
-                      icon: KubernetesIcon,
-                    },
-                  ],
-                  defaultOpen: false,
-                },
+          href: "",
+          label: "Auditor View",
+          icon: SquarePen,
+          submenus: [
+            {
+              href: "/logs?filter[status__in]=FAIL&filter[severity__in]=critical%2Chigh%2Cmedium&filter[provider_type__in]=aws&sort=severity,-inserted_at",
+              label: "Amazon Web Services",
+              icon: AWSIcon,
+            },
+            {
+              href: "/logs?filter[status__in]=FAIL&filter[severity__in]=critical%2Chigh%2Cmedium&filter[provider_type__in]=azure&sort=severity,-inserted_at",
+              label: "Microsoft Azure",
+              icon: AzureIcon,
+            },
+            {
+              href: "/logs?filter[status__in]=FAIL&filter[severity__in]=critical%2Chigh%2Cmedium&filter[provider_type__in]=m365&sort=severity,-inserted_at",
+              label: "Microsoft 365",
+              icon: M365Icon,
+            },
+            {
+              href: "/logs?filter[status__in]=FAIL&filter[severity__in]=critical%2Chigh%2Cmedium&filter[provider_type__in]=gcp&sort=severity,-inserted_at",
+              label: "Google Cloud",
+              icon: GCPIcon,
+            },
+            {
+              href: "/logs?filter[status__in]=FAIL&filter[severity__in]=critical%2Chigh%2Cmedium&filter[provider_type__in]=kubernetes&sort=severity,-inserted_at",
+              label: "Kubernetes",
+              icon: KubernetesIcon,
+            },
+          ],
+          defaultOpen: false,
+        },
         {
-          href: "/findings",
+          href: "/logs",
           label: "Browse all findings",
           icon: Tag,
         },

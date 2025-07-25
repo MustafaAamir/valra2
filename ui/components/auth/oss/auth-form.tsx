@@ -11,7 +11,7 @@ import { z } from "zod";
 import { authenticate, createNewUser } from "@/actions/auth";
 import { initiateSamlAuth } from "@/actions/integrations/saml";
 import { PasswordRequirementsMessage } from "@/components/auth/oss/password-validator";
-import { NotificationIcon, TrustreadyShort, TrustreadyExtended } from "@/components/icons";
+import { NotificationIcon, TrustreadyExtended } from "@/components/icons";
 import { ThemeSwitch } from "@/components/ThemeSwitch";
 import { useToast } from "@/components/ui";
 import { CustomButton, CustomInput } from "@/components/ui/custom";

@@ -27,6 +27,8 @@ services:
       - "dev"
 
   ui-dev:
+    environment:
+      - NEXT_PUBLIC_API_BASE_URL=http://prowler-api:8080/api/v1
     build:
       context: ./ui
       dockerfile: Dockerfile
@@ -115,3 +117,14 @@ services:
     entrypoint:
       - "../docker-entrypoint.sh"
       - "beat"
+
+  logs-api:
+      build:
+        context: ./api
+        dockerfile: Dockerfile.logs
+      ports:
+        - "8000:8000"
+      environment:
+        - AWS_ACCESS_KEY_ID
+        - AWS_SECRET_ACCESS_KEY
+      restart: unless-stopped
